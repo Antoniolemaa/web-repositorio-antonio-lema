@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* variables de colores */
+:root {
+    --fondo-header-footer: rgb(84,120,193);
+    --texto-header-footer: white;
+    --fondo-section: rgba(210,223,251,0.8);
+    --texto-section: rgb(73,105,169);
+    --fondo-hover: rgb(10,15,24);
+    --texto-hover: white;
+    --texto-active: black;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+header, footer {
+    background-color: var(--fondo-header-footer);
+    color: var(--texto-header-footer);
+}
+
+section {
+    background-color: var(--fondo-section);
+    color: var(--texto-section);
+}
+
+section:first-of-type:hover, article:hover {
+    background-color: var(--fondo-hover);
+    color: var(--texto-hover);
+}
+
+a:active {
+    color: var(--texto-active);
+}
+
+span {
+    font-weight: bold;
+}
+
+article:last-of-type > p {
+    font-style: italic;
+}
